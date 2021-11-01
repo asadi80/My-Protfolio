@@ -91,8 +91,12 @@ main{
 /* my work */
 #my-work{
     display: flex;
+    flex-wrap: wrap;
     height: 250px;   
-    height: 300px;
+    height: 580px;
+}
+#my-work:last-child{
+    margin-left: auto;
 }
 .my-work h2{
     color: var(--fontColor);
@@ -104,6 +108,9 @@ main{
     border-radius: 15px;
     height: 210px;
     margin: 10px;
+}
+.images p{
+    font-size: 25px;
 }
 /* contact me */
 #contact-me{
