@@ -1,0 +1,215 @@
+:root{
+    --fontColor: rgb(10, 60, 117);
+}
+body{
+    background-image: url(../images/);
+    font-family: 'Righteous', cursive;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+/* header */
+header{
+    margin: 0 auto;
+    
+    width: 95%;
+    height: 215px;
+    display: flex;
+    justify-content: space-between;
+}
+header .my-pro h1 {
+    padding-top: 75px;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--fontColor);
+    text-shadow:5px 5px 10px #9dd0f1;
+    letter-spacing: 5px;
+}
+header .nav  {
+    padding-top: 75px;
+}
+header .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .nav ul li a {
+    color: var(--fontColor);
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+header .my-pic{
+    padding-top: 10px;
+    width: 500px;
+}
+header .my-pic img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+header .my-pic img:hover{
+    transform: rotate(20deg);
+}
+header .nav ul li a:hover {
+    background: var(--fontColor);
+    color: whitesmoke;
+    border-radius: 15px;
+    text-shadow: none;
+}
+.my-pic img{
+    width: 200px;
+}
+main{
+    margin: 0 auto;
+    width: 95%;
+}
+/* about me */
+#about-me{
+    display: flex;
+    height: 250px;
+   
+   
+}
+.about-me h2{
+    color: var(--fontColor);
+    padding-top: 115px;
+    
+    width: 500px;
+    height: 250px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.p{
+    padding-top: 30px;
+    color: var(--fontColor);
+    font-size: 35px;
+    text-align: justify;
+}
+/* my work */
+#my-work{
+    display: flex;
+    height: 250px;   
+    height: 300px;
+}
+.my-work h2{
+    color: var(--fontColor);
+    padding-top: 115px;
+    width: 500px; 
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.images img{
+    border-radius: 15px;
+    height: 210px;
+    margin: 10px;
+}
+/* contact me */
+#contact-me{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    
+}
+.contact-me h2{
+    padding-top: 115px;
+    width: 500px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--fontColor);
+}
+#contact-me nav {
+    padding-top: 115px;
+    
+}
+#contact-me nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#contact-me nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--fontColor);
+    text-decoration: none;
+    
+}
+#contact-me nav ul li:hover{
+    transform:translateY(-10px);
+    
+    transition: transform 0.5s;
+   
+}
+.my-pro h1{
+    font-size: 45px;
+    
+}
+h2{
+    font-size: 35px;
+    
+}
+h3{
+    font-size: 20px;
+    
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer div{
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+/* @media screen and (min-width: 575px) {
+    body{
+        background-image:none;
+    }
+    header, footer{
+        flex-direction: column;
+    }
+    
+    .my-pro h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .about-me h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .my-work h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .my-work img{
+        padding: 5px;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+    footer{
+        
+    }
+    .contact-me h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    
+}
+@media screen and (min-width: 768px) {
+    
+}
+@media screen and (min-width: 980px) {
+    
+}
+@media screen and (min-width: 1221px) {
+    
+} */
