@@ -168,10 +168,14 @@ footer div{
 }
 
 @media screen and (max-width: 980px) {
+    body{
+    width: 100%;
+    height: 100%;
+  }
     header{
-        flex-direction: column;
+        
         justify-content: center;
-        height: 100%;
+        
     }
     .my-pic{
         padding-top: 0px auto;
@@ -211,12 +215,13 @@ footer div{
         
     }
     .about-me h2{
-        padding-top: 0px;
+        padding: 15px 0px 15px 138px;
+        
         color: var(--fontColor);
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
     .p{
-        padding: 0px;
+        padding: 5px;
         color: var(--fontColor);
         font-size: 15px;
         text-align: justify;
@@ -231,6 +236,7 @@ footer div{
         color: var(--fontColor);
         padding-top: 0px;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 15px 0px 15px 138px;
     }
     .images{
         flex-direction: column;
@@ -257,6 +263,7 @@ footer div{
         flex-direction: column;
         height: auto;
         
+        
     }
     .contact-me h2{
         padding-top: 0px;
@@ -275,7 +282,7 @@ footer div{
         
     }
     #contact-me nav ul li a {
-        
+        padding: 5px 10px;
         font-weight: lighter;
         font-size: 10px;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
