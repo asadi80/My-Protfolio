@@ -2,56 +2,55 @@
     --fontColor: rgb(10, 60, 117);
 }
 body{
-    background-image: url(../images/);
+   
     font-family: 'Righteous', cursive;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+    margin: 0 auto;
+    width: 95%;
     
 }
 /* header */
 header{
-    margin: 0 auto;
-    
-    width: 95%;
-    height: 215px;
     display: flex;
+    flex-wrap: wrap;
+    height: 215px;
     justify-content: space-between;
 }
-header .my-pro h1 {
+.my-pic{
+    padding-top: 10px;
+    width: 400px;
+}
+.my-pic img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    width: 200px;
+}
+.my-pro h1 {
     padding-top: 75px;
     font-weight: bold;
     font-size: 36px;
     color: var(--fontColor);
     text-shadow:5px 5px 10px #9dd0f1;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
 }
-header .nav  {
+.nav  {
     padding-top: 75px;
 }
-header .nav ul {
+.nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-header .nav ul li a {
+.nav ul li a {
     color: var(--fontColor);
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 20px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
-header .my-pic{
-    padding-top: 10px;
-    width: 500px;
-}
-header .my-pic img{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 15px;
-}
-header .my-pic img:hover{
+
+.my-pic img:hover{
     transform: rotate(20deg);
 }
 header .nav ul li a:hover {
@@ -60,30 +59,21 @@ header .nav ul li a:hover {
     border-radius: 15px;
     text-shadow: none;
 }
-.my-pic img{
-    width: 200px;
-}
-main{
-    margin: 0 auto;
-    width: 95%;
-}
+
 /* about me */
 #about-me{
     display: flex;
-    height: 250px;
-   
-   
+    margin-top: 30px;
+    height: 400px;
 }
 .about-me h2{
     color: var(--fontColor);
-    padding-top: 115px;
-    
+    padding-top: 175px;
     width: 500px;
-    height: 250px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .p{
-    padding-top: 30px;
+    padding-top: 100px;
     color: var(--fontColor);
     font-size: 35px;
     text-align: justify;
@@ -91,46 +81,48 @@ main{
 /* my work */
 #my-work{
     display: flex;
-    flex-wrap: wrap;
-    height: 250px;   
-    height: 580px;
+    height: 500px;
 }
-#my-work:last-child{
-    margin-left: auto;
-}
+
 .my-work h2{
     color: var(--fontColor);
-    padding-top: 115px;
+    padding-top: 185px;
     width: 500px; 
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+.images{
+    display: flex;
+    padding-top: 83px;
+    gap: 25px;
+}
 .images img{
     border-radius: 15px;
-    height: 210px;
     width: 500px;
-    margin: 10px;
+    height: 325px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
 }
 
-.images p{
-    font-size: 25px;
+.box1{
+    font-size: 30px;
+    padding-top: 112px;
+    
 }
 /* contact me */
 #contact-me{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 250px;
     
 }
 .contact-me h2{
-    padding-top: 115px;
+    padding-top: 137px;
     width: 500px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: var(--fontColor);
 }
 #contact-me nav {
-    padding-top: 115px;
+    padding-top: 137px;
     
 }
 #contact-me nav ul {
@@ -155,10 +147,7 @@ main{
     transition: transform 0.5s;
    
 }
-.my-pro h1{
-    font-size: 45px;
-    
-}
+
 h2{
     font-size: 35px;
     
@@ -178,49 +167,130 @@ footer div{
     padding-bottom: 50px;
 }
 
-/* @media screen and (min-width: 575px) {
-    body{
-        background-image:none;
-    }
-    header, footer{
+@media screen and (max-width: 980px) {
+    header{
         flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    .my-pic{
+        padding-top: 0px auto;
+        width: 100%;
+        justify-content: center;
+    }
+    .my-pic img{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 15px;
+        justify-content: center;
+    }
+    .my-pro h1 {
+        font-size: 25px;
+        padding-top: 0px;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 0px;
+    }
+    .nav  {
+        padding-top: 0px;
+    }
+    .nav ul {
+        width: 100%;
+        justify-content: center; 
+    }
+    .nav ul li a {
+        color: var(--fontColor);
+        font-weight: lighter;
+        font-size: 10px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
     }
     
-    .my-pro h1{
-        font-size: 25px;
-        text-align: center;
+    #about-me{
+        flex-direction: column;
+        height: auto;
+        
     }
     .about-me h2{
-        font-size: 20px;
-        text-align: center;
+        padding-top: 0px;
+        color: var(--fontColor);
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .p{
+        padding: 0px;
+        color: var(--fontColor);
+        font-size: 15px;
+        text-align: justify;
+    }
+    #my-work{
+        flex-direction: column;
+        height: auto;
+        
     }
     
     .my-work h2{
-        font-size: 20px;
-        text-align: center;
+        color: var(--fontColor);
+        padding-top: 0px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
-    .my-work img{
-        padding: 5px;
-        display: flex;
-        width: 90%;
-        margin: 0 auto;
+    .images{
+        flex-direction: column;
+        padding-top: 0px;
+        gap: 10px;
+        
+        
+        
     }
-    footer{
+    .images img{
+        border-radius: 15px;
+        width: 250px;
+        height: 150px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+    }
+    
+    .box1{
+        font-size: 15px;
+        padding-top: 0px;
+        
+        
+    }#contact-me{
+        flex-direction: column;
+        height: auto;
         
     }
     .contact-me h2{
-        font-size: 20px;
-        text-align: center;
+        padding-top: 0px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        color: var(--fontColor);
+    }
+    #contact-me nav {
+        padding-top: 0px;
+        
+    }
+    #contact-me nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #contact-me nav ul li a {
+        
+        font-weight: lighter;
+        font-size: 10px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        color: var(--fontColor);
+        text-decoration: none;
+        
+    }
+    h2{
+        font-size: 15px;
+        
+    }
+    h3{
+        font-size: 10px;
+        
     }
 
     
 }
-@media screen and (min-width: 768px) {
-    
-}
-@media screen and (min-width: 980px) {
-    
-}
-@media screen and (min-width: 1221px) {
-    
-} */
