@@ -1,0 +1,91 @@
+:root{
+    --fontColor: rgb(10, 60, 117);
+}
+body{
+   background: url(./images/Creative-gear-wheel-and-circuit-board-background-vector-0541.png);
+    font-family: 'Righteous', cursive;
+    margin: 0 auto;
+    width: 95%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--fontColor);
+}
+
+/* header */
+header{
+    display: flex;
+
+    flex-wrap: wrap;
+    height: 220px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.my-pro{
+    justify-content: center;
+}
+.my-pic img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    width: 200px;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul li a {
+    color: var(--fontColor);
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.my-pic img:hover{
+    transform: rotate(20deg);
+}
+header  ul li a:hover {
+    background: var(--fontColor);
+    color: whitesmoke;
+    border-radius: 15px;
+    text-shadow: none;
+}
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--fontColor);
+    text-shadow:5px 5px 10px #9dd0f1;
+    letter-spacing: 10px;
+    
+}
+h2{
+    flex: 1;
+    
+    font-size: 1.8vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+p{
+    font-size: 1.6vw;
+    text-indent: 30px;
+    margin-top: 10px;
+}
+li{
+    font-size: 1.2vw;
+    text-indent: 60px;
+    margin-top: 5px;
+}
+footer{
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
