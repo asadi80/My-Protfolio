@@ -19,6 +19,16 @@ i{
 
 text-align: center;
 }
+.text-content{
+  height: 270px;
+}
+.text-content h4{
+  font-size: large;
+}
+.primary-button a {
+position: absolute;
+    bottom: 20px
+}
 p {
 	font-size: 13px;
 	line-height: 26px;
